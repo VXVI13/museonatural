@@ -1,0 +1,167 @@
+/* Importación de fuentes */
+@font-face {
+    font-family: 'SC pronav';
+    src: url('fonts/SCpronav.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PF';
+    src: url('fonts/PF.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SS';
+    src: url('fonts/SSreg.ttf') format('truetype');
+}
+
+/* Fondo general para todas las páginas */
+body {
+    background-color: #f8f9fa; /* Gris claro */
+    color: #f6efef; /* Color del texto */
+    font-family: 'ss pronavi', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #888888; /* Fondo gris */
+    color: white; /* Texto blanco */
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.875rem; /* Tamaño del texto reducido */
+}
+
+footer img {
+    height: 30px;
+    margin: 0 10px; /* Espaciado entre los logos */
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Tipografía general */
+body {
+    font-family: 'PF', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: transparent;
+    color: #000; /* Define el color del texto */
+}
+
+/* Portada */
+.portada {
+    position: relative;
+    background: url('images/vangogh.avif') no-repeat center center/cover;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye los cuadros y el título */
+    overflow: hidden;
+    color: white;
+}
+
+/* Fondo negro translúcido sobre la imagen */
+.portada::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35); /* Fondo negro con opacidad */
+    z-index: 1; /* Asegura que esté detrás del contenido */
+}
+
+/* Contenedor principal */
+.contenido-portada {
+    position: relative;
+    z-index: 2; /* Por encima del fondo translúcido */
+    display: flex;
+    width: 100%; /* Abarca todo el ancho */
+    height: 100%; /* Abarca toda la altura */
+    padding: 2rem; /* Espaciado interno */
+}
+
+/* Columna de cuadros */
+.columna-cuadros {
+    display: flex;
+    flex-direction: column; /* Alinea los cuadros en columna */
+    gap: 1.5rem; /* Espaciado entre cuadros */
+    align-self: center; /* Centra verticalmente la columna */
+    width: 30%; /* Ajusta el ancho total de la columna */
+}
+
+/* Estilo de cada cuadro */
+.cuadro {
+    background-color: rgba(128, 128, 128, 0.5); /* Gris con opacidad */
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efecto hover en los cuadros */
+.cuadro:hover {
+    background-color: #f4d03f; /* Amarillo */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+/* Título principal a la derecha */
+.titulo-medio {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: auto; /* Alinea el título a la derecha */
+    align-self: center; /* Centra verticalmente el título */
+    width: 30%; /* Ajusta el ancho del texto */
+}
+/* Estilo para las imágenes dentro de publicaciones */
+.publicaciones .ventana img {
+    width: 100%; /* Ancho ajustado al contenedor */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para mejor estética */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publicaciones .ventana img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Incrementa la sombra en hover */
+}
+
+/* Contenedor de cada ventana */
+.publicaciones .ventana {
+    text-align: center; /* Centra el texto debajo de la imagen */
+    padding: 1rem; /* Espaciado interno */
+}
+/* Navbar */
+    .navbar-index {
+        font-family: 'sc pronav', sans-serif;
+        font-weight: normal;
+        font-size: small;
+        color: white; /* Texto blanco */
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro translúcido */
+        padding: 0.75rem 1rem;
+        position: fixed; /* Navbar fija al inicio de la página */
+        top: 0;
+        width: 100%; /* Ocupa todo el ancho */
+        z-index: 1000; /* Siempre encima del contenido */
+    }
+
+.navbar-brand img {
+    height: 50px;
+    
+}
+.navbar-nav .nav-link {
+    color: white !important;
+}
+

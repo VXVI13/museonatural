@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visita - Museo Nacional de Arte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleexh.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            position: relative;
+            background: url('images/mus.jpg') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            padding: 2rem;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .info {
+            color: white;
+            width: 40%;
+        }
+        .info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .info p {
+            margin: 0.5rem 0;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .nav-buttons button {
+            border: none;
+            background-color: #f4f4f4;
+            color: black;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+        .nav-buttons button:hover {
+            background-color: #f4d03f;
+        }
+        .highlight {
+            background-color: #f4d03f;
+            color: white;
+        }
+        .info-section {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .info-section p {
+            margin: 1rem 0;
+        }
+        .btn-virtual {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+        .btn-virtual:hover {
+            background-color: #f4d03f;
+        }
+        footer {
+            background-color: #a6a7a8;
+            color: white;
+            padding: 1rem 0;
+        }
+        footer img {
+            height: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-index">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo-museo.png" alt="Logo Museo" style="height: 50px; margin-right: 15px;" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="visita.html">Visita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="exhibiciones.html">Exhibiciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="actividades.html">Actividades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publicaciones.html">Publicaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="coleccion.html">Colección</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conocemas.html">Conoce más</a></li>
+                    <li class="nav-item"><a class="nav-link" href="apoya.html">Apoya</a></li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content container">
+            <div class="info">
+                <h2>Dirección</h2>
+                <p>Tacuba 8, Centro Histórico, Ciudad de México, 06010</p>
+                <h2>Información</h2>
+                <p>Tel. 8647-5430 <br> Ext. 5065 y 5067</p>
+            </div>
+            <div>
+                <img src="/images/mus.jpg" class="img-fluid" style="max-height: 300px; border-radius: 10px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons container">
+        <button>Museo</button>
+        <button>Cómo llegar</button>
+        <button class="highlight">Visitas Guiadas</button>
+        <button>Servicios</button>
+        <button>Políticas</button>
+    </div>
+
+    <!-- Information Section -->
+    <div class="info-section">
+        <p>Atención a grupos requiere reserva previa con 10 días de antelación. El aforo mínimo es de 10 personas y el máximo de 25 personas.</p>
+        <p>Información y reservas: <br> visitasguiadas@munal.inba.gob.mx <br> visitasescuelas@munal.inba.gob.mx</p>
+        <button class="btn-virtual">Recorrido Virtual</button>
+    </div>
+
+    <footer>
+        <p>Patrocinadores</p>
+        <img src="images/HSBC .PNG" alt="HSBC">
+        <img src="images/inbal.PNG" alt="INBAL">
+        <img src="images/izzi.PNG" alt="Izzi">
+        <img src="images/cultura.PNG" alt="Cultura">
+        <p>&copy; 2024 Museo Nacional de Arte. Todos los derechos reservados.</p>
+    </footer>
+    
